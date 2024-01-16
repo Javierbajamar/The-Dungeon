@@ -50,4 +50,8 @@ public class GameController implements Initializable {
 		return game;
 	}
 
+	public void startGame() {
+		game = new Game(canvas);
+		game.start();
+	}
 }

@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <GridPane alignment="CENTER" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -27,7 +27,7 @@
          <children>
             <HBox alignment="CENTER_RIGHT" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" styleClass="botonAudioMenu">
+                  <Button fx:id="controlMusicButton" mnemonicParsing="false" onAction="#onControlMusicButton" styleClass="botonAudioMenu">
                      <graphic>
                         <ImageView pickOnBounds="true" preserveRatio="true" />
                      </graphic>
@@ -42,7 +42,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <children>
-                  <Button fx:id="playButton" cache="true" contentDisplay="RIGHT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#onPlayButton" styleClass="botonesMenu" text="JUGAR" textOverrun="CLIP">
+                  <Button fx:id="playButton" cache="true" contentDisplay="CENTER" graphicTextGap="6.0" maxWidth="324.0" mnemonicParsing="false" onAction="#onPlayButton" styleClass="botonesMenu" text="JUGAR" textOverrun="CLIP">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -50,7 +50,7 @@
                         <ImageView fitHeight="69.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
-                  <Button fx:id="pdfButton" cache="true" contentDisplay="RIGHT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#onpdfButton" styleClass="botonesMenu" text="GENERAR PDF" textOverrun="CLIP">
+                  <Button fx:id="pdfButton" cache="true" contentDisplay="CENTER" graphicTextGap="6.0" maxWidth="324.0" mnemonicParsing="false" onAction="#onpdfButton" styleClass="botonesMenu" text="GENERAR PDF" textOverrun="CLIP">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -58,7 +58,7 @@
                         <ImageView fitHeight="69.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
                      </graphic>
                   </Button>
-                  <Button fx:id="leaveButton" cache="true" contentDisplay="RIGHT" graphicTextGap="6.0" mnemonicParsing="false" onAction="#onLeaveButton" styleClass="botonesMenu" text="SALIR DEL JUEGO" textOverrun="CLIP">
+                  <Button fx:id="leaveButton" cache="true" contentDisplay="CENTER" graphicTextGap="6.0" maxWidth="324.0" mnemonicParsing="false" onAction="#onLeaveButton" styleClass="botonesMenu" text="SALIR DEL JUEGO" textOverrun="CLIP">
                      <font>
                         <Font size="30.0" />
                      </font>
@@ -79,7 +79,7 @@
             </HBox>
             <HBox alignment="CENTER" GridPane.rowIndex="2">
                <children>
-                  <Label text="Javier Pérez, Jarod Peña, Joel Gómez" textAlignment="CENTER" />
+                  <Label fx:id="hechoPorLabel" text="Javier Pérez, Jarod Peña, Joel Gómez" textAlignment="CENTER" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
