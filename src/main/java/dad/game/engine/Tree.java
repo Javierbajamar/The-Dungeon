@@ -8,8 +8,9 @@ import javafx.scene.image.Image;
  */
 public class Tree extends CollidableEntity {
 
+	//TODO cambiar la textura sin que crashee el programa
 	public Tree(double x, double y) {
-		super(new Image("/images/treeTile.png"), x, y);
+		super(new Image("/images/Wall21.png"), x, y);
 	}
 
 	@Override
