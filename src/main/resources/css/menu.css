@@ -1,10 +1,10 @@
  @font-face {
-  font-family: "Pokemon Pixel Font";
-  src: url('../font/pokemon_pixel_font.ttf');
+  font-family: "The Dungeon Font";
+  src: url('/font/BungeeSpice-regular.ttf');
 }
 
 .botonesMenu {
-	-fx-font-family: "Pokemon Pixel Font";
+	-fx-font-family: "The Dungeon Font";
 	-fx-font-size:30;
 	-fx-opacity: 0.75;
 	-fx-background-radius: 0;
@@ -28,7 +28,7 @@
 }
 
 .botonJugarEleccion {
-	-fx-font-family: "Pokemon Pixel Font";
+	-fx-font-family: "The Dungeon Font";
 	-fx-font-size:30;
 	-fx-opacity: 0.75;
 	-fx-background-radius: 0;
@@ -41,19 +41,19 @@
 }
 
 .label {
-	-fx-font-family: "Pokemon Pixel Font";
+	-fx-font-family: "The Dungeon Font";
 	-fx-font-size:50px;
 	-fx-text-fill:  #ccffcc;
 }
 
 .hechoPorLabel {
-	-fx-font-family: "Pokemon Pixel Font";
-	-fx-font-size: 26px;
+	-fx-font-family: "The Dungeon Font2";
+	-fx-font-size: 14px;
 	-fx-text-fill:  #ccffcc;
 }
 
 .list-cell {
-	-fx-font-family: "Pokemon Pixel Font";
+	-fx-font-family: "The Dungeon Font";
 	-fx-font-size:20;
 	-fx-background-color:  #ccffcc;
 	-fx-opacity: 0.75;
@@ -71,7 +71,7 @@
 }
 
 #view {
-    -fx-background-image:url('../images/background.gif');
+    -fx-background-image:url('/images/Background.gif');
     -fx-background-size:100% 100%;
    
 }
